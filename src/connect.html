@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('html/_head.htm',{
+	"title":"Связаться"
+	})
+	<body style="opacity: 0">
+		<div class="wrapper">
+			<header class="header usual">
+				<div class="header__container">
+					<nav class="header__body">
+						<div class="header__volume">
+							<button><img src="@img/icons/sound_on.svg" alt="Звук" class="header__sound"></button>
+							/
+							<button><img src="@img/icons/sound_off.svg" alt="Звук" class="header__sound"></button>
+						</div>
+						<a data-da=".menu__links, 600" href="portfolio.html" class="header__item _link">Портфолио</a>
+						<a data-da=".menu__links, 600" href="directions.html" class="header__item _link">Услуги</a>
+						<div class="header__korni"><a href="index.html"><img src="@img/icons/logo3.svg" alt="Korni"></a></div>
+						<a data-da=".menu__links, 600" href="about-us.html" class="header__item _link ">Агентство</a>
+						<a data-da=".menu__links, 600" href="connect.html" class="header__item _link _targeted">Связаться</a>
+						<div class="header__language">
+							<button class="header__rus active">Рус</button>
+							/
+							<button class="header__eng">Eng</button>
+						</div>
+					</nav>
+				</div>
+			</header>
+			<main class="page _usual">
+				<div class="veil"></div>
+				<div class="header__menu menu">
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
+					<nav class="menu__body">
+						<div class="menu__links active">
+							<a href="index.html" class="header__item _link">Главная</a>
+						</div>
+					</nav>
+				</div>
+				<section class="page__welcome welcome">
+					<div class="welcome__container">
+						<div class="welcome__body">
+							<div class="welcome__left">
+								<h1 class="welcome__title">Давайте обсудим проект!</h1>
+							</div>
+							<div class="welcome__right">
+								<div class="welcome__text">Перед началом работы над проектом, нам нужно все подробно обсудить (чтобы мы предложили вам лучший вариант)</div>
+								<div class="welcome__contacts">
+									<div class="welcome__email">Email: kornikal@gmail.com</div>
+									<div class="welcome__phone">Телефон: 89558432510</div>
+									<div class="welcome__email">Telegram: @kornikornikal</div>
+									<div class="welcome__phone">WhatsApp: 89558432510</div>
+								</div>
+								<div class="welcome__text">Или же вы можете заполнить следующую форму, чтобы быстрей обо всем договориться)</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<form class="page__form form">
+					<div class="form__container">
+						<section class="form__services services-form">
+							<div class="services-form__body">
+								<div class="services-form__left">
+									<h2 class="services-form__title">Какие услуги вам необходимы?</h2>
+									<div class="services-form__text">Можно выбрать несколько вариантов</div>
+								</div>
+								<div class="services-form__right">
+									<div class="services-form__checkbox">
+										
+										<div class="services-form__column">
+											<h3 class="services-form__name _orange">Граф. дизайн</h3>
+											<input id="c_1" data-error="Ошибка" class="services-form__input-checkbox" type="checkbox" value="1" name="form[]">
+											<label for="c_1" class="services-form__field _orange"><span class="services-form__label">Логотипы</span></label>
+											<input id="c_2" data-error="Ошибка" class="services-form__input-checkbox" type="checkbox" value="2" name="form[]">
+											<label for="c_2" class="services-form__field _orange"><span class="services-form__label">Брендинг</span></label>
+											<input id="c_3" data-error="Ошибка" class="services-form__input-checkbox" type="checkbox" value="3" name="form[]">
+											<label for="c_3" class="services-form__field _orange"><span class="services-form__label">Рекламные креативы</span></label>
+											<input id="c_4" data-error="Ошибка" class="services-form__input-checkbox" type="checkbox" value="4" name="form[]">
+											<label for="c_4" class="services-form__field _orange"><span class="services-form__label">Иллюстрации</span></label>
+										</div>
+										<div class="services-form__column">
+											<h3 class="services-form__name _blue">UX/UI дизайн</h3>
+											<input id="c_5" data-error="Ошибка" class="services-form__input-checkbox" type="checkbox" value="5" name="form[]">
+											<label for="c_5" class="services-form__field _blue"><span class="services-form__label">Сайт-визитка</span></label>
+											<input id="c_6" data-error="Ошибка" class="services-form__input-checkbox" type="checkbox" value="6" name="form[]">
+											<label for="c_6" class="services-form__field _blue"><span class="services-form__label">Лендинги</span></label>
+											<input id="c_7" data-error="Ошибка" class="services-form__input-checkbox" type="checkbox" value="7" name="form[]">
+											<label for="c_7" class="services-form__field _blue"><span class="services-form__label">Многостраничник</span></label>
+											<input id="c_8" data-error="Ошибка" class="services-form__input-checkbox" type="checkbox" value="8" name="form[]">
+											<label for="c_8" class="services-form__field _blue"><span class="services-form__label">Интернет-магазин</span></label>
+										</div>
+										<div class="services-form__column">
+											<h3 class="services-form__name _red">Моб. Приложения</h3>
+											<input id="c_9" data-error="Ошибка" class="services-form__input-checkbox" type="checkbox" value="9" name="form[]">
+											<label for="c_9" class="services-form__field _red"><span class="services-form__label">Дизайн приложения</span></label>
+											<input id="c_10" data-error="Ошибка" class="services-form__input-checkbox" type="checkbox" value="10" name="form[]">
+											<label for="c_10" class="services-form__field _red"><span class="services-form__label">Android-разработка</span></label>
+											<input id="c_11" data-error="Ошибка" class="services-form__input-checkbox" type="checkbox" value="11" name="form[]">
+											<label for="c_11" class="services-form__field _red"><span class="services-form__label">IOS-разработка</span></label>
+											<input id="c_12" data-error="Ошибка" class="services-form__input-checkbox" type="checkbox" value="12" name="form[]">
+											<label for="c_12" class="services-form__field _red"><span class="services-form__label">Приложение под ключ</span></label>
+										</div>
+										<div class="services-form__column">
+											<h3 class="services-form__name _green">Маркетинг</h3>
+											<input id="c_13" data-error="Ошибка" class="services-form__input-checkbox" type="checkbox" value="13" name="form[]">
+											<label for="c_13" class="services-form__field _green"><span class="services-form__label">SMM</span></label>
+											<input id="c_14" data-error="Ошибка" class="services-form__input-checkbox" type="checkbox" value="14" name="form[]">
+											<label for="c_14" class="services-form__field _green"><span class="services-form__label">Таргетировання реклама</span></label>
+											<input id="c_15" data-error="Ошибка" class="services-form__input-checkbox" type="checkbox" value="15" name="form[]">
+											<label for="c_15" class="services-form__field _green"><span class="services-form__label">Контекстная реклама</span></label>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+						<section class="form__description description-form">
+							<div class="description-form__body">
+								<div class="description-form__left">
+									<h2 class="description-form__title">Опишите ваш проект</h2>
+									<div class="description-form__text">Не забудьте рассказать о сроках</div>
+								</div>
+								<div class="description-form__right">
+									<textarea name="form[]" required data-error="Ошибка" class="description-form__input" placeholder="Введите текст..." id="description"></textarea>
+									<div class="description-form__upload">
+										<input autocomplete="off" id="file" type="file" name="form[]" data-error="Ошибка" placeholder="" class="description-form__file">
+										<label for="file" class="description-form__label"><span class="description-form__file-button-text">Прикрепите бриф или другой файл</span></label>
+									</div>
+								</div>
+							</div>
+						</section>
+						<section class="form__budget budget-form">
+							<div class="budget-form__body">
+								<div class="budget-form__left">
+									<h2 class="budget-form__title">Укажите бюджет проекта </h2>
+									<div class="budget-form__text">Указывайте только ту сумму, которую можете заплатить</div>
+								</div>
+								<div class="budget-form__right">
+									<div class="budget-form__options">
+										<div class="budget-form__item">
+											<input hidden id="o_1" class="budget-form__input" checked type="radio" value="1" name="option">
+											<label for="o_1" class="budget-form__field"><span class="budget-form__label _low">100.000₽</span></label>
+										</div>
+										<div class="budget-form__item">
+											<input hidden id="o_2" class="budget-form__input" type="radio" value="2" name="option">
+											<label for="o_2" class="budget-form__field"><span class="budget-form__label">100.000-200.000₽</span></label>
+										</div>
+										<div class="budget-form__item">
+											<input hidden id="o_3" class="budget-form__input" type="radio" value="2" name="option">
+											<label for="o_3" class="budget-form__field"><span class="budget-form__label">200.000-300.000₽</span></label>
+										</div>
+										<div class="budget-form__item">
+											<input hidden id="o_4" class="budget-form__input" type="radio" value="2" name="option">
+											<label for="o_4" class="budget-form__field"><span class="budget-form__label">> 300.000₽</span></label>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+						<section class="form__greetings greetings-form">
+							<div class="greetings-form__body">
+								<div class="greetings-form__left">
+									<h2 class="greetings-form__title">Давайте знакомиться</h2>
+									<div class="greetings-form__text">Теперь расскажите кто именно нам пишет</div>
+								</div>
+								<div class="greetings-form__right">
+									<div class="greetings-form__field">
+										<label class="greetings-form__label" for="i_1">Меня зовут</label>
+										<input id="i_1" autocomplete="off" required type="text" name="form[]" data-error="Ошибка" placeholder="" class="greetings-form__input">
+									</div>
+									<div class="greetings-form__field">
+										<label for="i_2" class="greetings-form__label">Я из компании</label>
+										<input id="i_2" autocomplete="off" required type="text" name="form[]" data-error="Ошибка" placeholder="" class="greetings-form__input">
+									</div>
+									<div class="greetings-form__field">
+										<label for="" class="greetings-form__label">Моя почта</label>
+										<input id="i_3" autocomplete="off" required type="text" name="form[]" data-error="Ошибка" placeholder="" class="greetings-form__input">
+									</div>
+									<div class="greetings-form__contacts">
+										<div class="greetings-form__phone">
+											<label for="i_4" class="greetings-form__label">Мой телефон</label>
+											<input id="i_4" autocomplete="off" required type="text" name="form[]" data-error="Ошибка" placeholder="" class="greetings-form__input">
+										</div>
+										<div class="greetings-form__telegram">
+											<label for="i_5" class="greetings-form__label">Мой Telegram</label>
+											<input id="i_5" autocomplete="off"  type="text" name="form[]" data-error="Ошибка" placeholder="" class="greetings-form__input">
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+					</div>
+					<section class="form__promo promo-form">
+						<div class="promo-form__container">
+							<label for="i_promo" class="promo-form__label">Есть промокод?</label>
+							<input id="i_promo" autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="" class="promo-form__input">
+						</div>
+						
+					</section>
+					<div class="form__container">
+						<section class="form__submit submit-form">
+							<div class="submit-form__button">
+								<label for="s_1" class="submit-form__label">Отправить запрос</label>
+								<input id="s_1" autocomplete="off" type="submit" name="form[]" data-error="Ошибка" class="submit-form__sub">
+							</div>
+						</section>
+					</div>
+				</form>
+			</main>
+			@@include('html/_footer.htm',{})
+		</div>
+		<div id="popup" aria-hidden="true" class="connect-popup">
+			<div id="popupBg" class="connect-popup__veil"></div>
+			<div class="connect-popup__wrapper">
+				<div class="connect-popup__content">
+					<button id="popupCloseBtn" type="button" class="connect-popup__close">Жду</button>
+					<div id="popupImage" class="connect-popup__image-ibg">
+						<img src="@img/connect/firework-14.gif" alt="Гифка">
+					</div>
+					<div class="connect-popup__text">
+
+						<h2 id="popupTitle" class="connect-popup__title">Спасибо за заявку!</h2>
+						<div id="popupBody" class="connect-popup__description">В ближайшее время мы свяжемся с вами</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		@@include('html/_js.htm',{})
+		<script src="js/Validator.js"></script>
+		<script>
+		const form = document.querySelector('form'),
+			submitBtn = document.querySelector('#submitBtn'),
+			promo = document.querySelector('#i_promo'),
+			popup = document.querySelector('#popup'),
+			popupImage = document.querySelector('#popupImage'),
+			popupTitle = document.querySelector('#popupTitle'),
+			popupCloseBtn = document.querySelector('.connect-popup__close'),
+			popupCloseBg = document.querySelector('.connect-popup__veil'),
+			popupBody = document.querySelector('#popupDescription'),
+			description = new Validator('#description', Validator.rgxDescription, 'Недопустимые символы в описании задачи'),
+			file = new Validator('#file', null, 'Загружаемый файл не может быть больше 10мб'),
+			name = new Validator('#i_1', Validator.rgxName, 'Кажется вы неправильно указали имя'),
+			email = new Validator('#i_3', Validator.rgxEmail, 'В указанной почте допущена ошибка'),
+			phone = new Validator('#i_4', Validator.rgxPhone, 'Номер телефона указан неверно')
+		
+		description.correctMultiWords()
+		name.correctMultiWords(); name.check()
+		email.correctSingleWord(); email.check()
+		phone.correctSingleWord(); phone.check()
+		file.checkFileSize()
+
+		const openPopup = function(title, message, image) {
+			const img = document.createElement('img');
+			img.src = `img/connect/${image}.gif`;
+			popupTitle.innerText = title;
+			popupBody.innerText = message;
+			popup.classList.add('open');
+			popupCloseBtn.addEventListener('click', () => popup.classList.remove('open'));
+			submitBtn.removeAttribute('disabled');
+		}
+
+		form.addEventListener('submit', (e) => {
+			e.preventDefault()
+			if (!name.test()) return name.showReport()
+			else if (!email.test()) return email.showReport()
+			else if (!phone.test()) return phone.showReport()
+			else {
+				submitBtn.setAttribute('disabled', '')
+
+				const request = new XMLHttpRequest(),
+					url = 'mailer.php',
+					timeout = setTimeout(() => {
+						openPopup('Ой...', 'Произошли технические неполадки, но вы можете нам позвонить или написать', 'fail')
+						request.abort()
+					}, 10000)
+				
+				request.open("POST", url, true)
+				request.addEventListener("readystatechange", () => {
+					if(request.readyState === 4 && request.status === 200) {
+						if (request.responseText === '1') openPopup('Спасибо за заявку!', 'В ближайшее время мы свяжемся с вами', 'success')
+						else popupBody.innerText = openPopup('Возникла ошибка...', 'Проверьте введённые данные или повторите попытку позже', 'fail')
+						clearTimeout(timeout)
+					}
+				})
+				
+				formData = new FormData(form)
+				request.send(formData)
+			}
+		})
+		
+		</script>
+	</body>
+</html>

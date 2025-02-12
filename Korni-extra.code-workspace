@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "../Korni-extra"
+		},
+		{
+			"path": "../../Traning/zlatmax"
+		},
+		{
+			"path": "../korni redact"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "korni redact"
+	}
+}

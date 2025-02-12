@@ -1,0 +1,308 @@
+.page {
+
+    &__title {
+    }
+
+    &__article {
+    }
+}
+.title-page {
+    padding-bottom: orem(50);
+    &__container{
+        display: flex;
+        align-items: center;
+        @include adaptiveValue("gap", 27, 8);
+
+    }
+    &__title {
+        display: inline;
+        font-family: Montserrat;
+        @include adaptiveValue("font-size", 80, 40, 1920, 992, 1);
+        font-weight: 600;
+        line-height: normal;
+        br{
+            display: none;
+        }
+        @media(max-width:$tablet){
+            @include adaptiveValue("font-size", 40, 30, 991.98, 600, 1);
+        }
+        @media(max-width:600px){
+            @include adaptiveValue("font-size", 40, 28, 600, 320, 1);
+            br{
+                display: block;
+            }
+        }
+        position: relative;
+    }
+
+    &__images {
+        display: inline-flex;
+        align-items: center;
+        gap: orem(10);
+        @include adaptiveValue("gap", 10, 5, 1920, 992, 1);
+        transform: translate(110%, -70%);
+        position: absolute;
+        bottom: 0;
+        right: 0;
+
+    }
+    &__round{
+        display: inline-block;
+        position: relative;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        @include adaptiveValue("width", 25, 15, 1920, 992, 1);
+        @include adaptiveValue("height", 25, 15, 1920, 992, 1);
+        @media(max-width:$tablet){
+            @include adaptiveValue("width", 15, 12, 991.98, 600, 1);
+            @include adaptiveValue("height", 15, 12, 991.98, 600, 1);
+        }
+        @media(max-width:600px){
+            @include adaptiveValue("width", 15, 10, 600, 320, 1);
+            @include adaptiveValue("height", 15, 10, 600, 320, 1);
+        }
+
+    }
+    &__round-1 {
+        background-color: #FF891C;
+    }
+    &__round-2 {
+        background-color: #1E90FF;
+    }
+    &__round-3 {
+        background-color: #FF1C60;
+    }
+    &__round-4 {
+        background-color: #4CBB17;
+    }
+    &__round-5 {
+        background-color: #96C;
+    }
+}
+
+
+.article {
+    @include adaptiveValue("padding-bottom", 130, 60);
+    &__container {
+        display: grid;
+        grid-template-columns: 3fr 8fr;
+        @include adaptiveValue("gap", 160, 40, 1920, 992, 1);
+        @media(max-width:$tablet){
+            grid-template-columns: 1.035fr 2fr;
+        }
+        @media(max-width:600px){
+            grid-template-columns: 1fr;
+        }
+       
+    }
+
+    &__left {
+    }
+
+    &__image-ibg {
+        @media(min-width: $tablet){
+            padding-bottom: percent(700, 430);
+        }
+        @media(max-width: $tablet){
+            padding-bottom: percent(800, 300);
+        }
+        @media(max-width:600px){
+            padding-bottom: percent(262, 420);
+        }
+        &._web{
+            @media(min-width: $tablet){
+                padding-bottom: percent(520, 430);
+            }
+            @media(max-width: $tablet){
+                padding-bottom: percent(600, 300);
+            }
+            @media(max-width:600px){
+                padding-bottom: percent(262, 420);
+            }
+        }
+        &._mob{
+            @media(min-width: $tablet){
+                padding-bottom: percent(640, 430);
+            }
+            @media(max-width: $tablet){
+                padding-bottom: percent(754, 300);
+            }
+            @media(max-width:600px){
+                padding-bottom: percent(262, 420);
+            }
+        }
+        &._mark{
+            @media(min-width: $tablet){
+                padding-bottom: percent(612, 430);
+            }
+            @media(max-width: $tablet){
+                padding-bottom: percent(707, 300);
+            }
+            @media(max-width:600px){
+                padding-bottom: percent(262, 420);
+            }
+        }
+    }
+
+    &__image-1 {
+        @media(max-width: $tablet){
+            display: none;
+        }
+    }
+
+    &__image-2 {
+        @media(min-width: $tablet){
+            display: none;
+        }
+    }
+
+    &__image-3 {
+        @media(min-width: 600px){
+            display: none;
+        }
+    }
+
+    &__right {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+
+
+    }
+
+    &__title {
+        position: relative;
+        font-family: Montserrat;
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+        @include adaptiveValue("gap", 10, 8);
+        @include adaptiveValue("font-size", 60, 40, 1920, 992, 1);
+        font-weight: 600;
+        line-height: normal;
+        @include adaptiveValue("padding-bottom", 60, 40, 1920, 992, 1);
+        @media(max-width:$tablet){
+            @include adaptiveValue("font-size", 40, 28, 991.98, 600, 1);
+            @include adaptiveValue("padding-bottom", 40, 20, 991.98, 600, 1);
+        }
+        @media(max-width:600px){
+            @include adaptiveValue("font-size", 40, 35, 600, 320, 1);
+            @include adaptiveValue("padding-bottom", 40, 30, 600, 320, 1);
+        }
+        &::before{
+            content: '';
+            display: inline-block;
+            @include adaptiveValue("width", 25, 15, 1920, 992, 1);
+            @include adaptiveValue("height", 25, 15, 1920, 992, 1);
+            border-radius: 50%;
+            transform: translate(0, 20%);
+            @media(max-width:$tablet){
+                @include adaptiveValue("width", 15, 12, 991.98, 600, 1);
+                @include adaptiveValue("height", 15, 12, 991.98, 600, 1);
+            }
+            @media(max-width:600px){
+                @include adaptiveValue("width", 15, 10, 600, 320, 1);
+                @include adaptiveValue("height", 15, 10, 600, 320, 1);
+
+
+            }
+        }
+        &._orange{
+            br{
+                @media(min-width: 600px){
+                    display: none;
+                }
+            }
+            &::before{
+                background-color: #FF891C;
+                @media(max-width:600px){
+                    position: absolute;
+                    bottom: 40%;
+                    right: 40%;
+                    transform: translate(80%, 20%);
+                }
+            }
+        }
+        &._blue{
+            &::before{
+                background-color: #1E90FF;
+            }
+        }
+        &._red{
+            br{
+                @media(min-width: 600px){
+                    display: none;
+                }
+            }
+            &::before{
+                background-color: #FF1C60;
+                @media(max-width:600px){
+                    position: absolute;
+                    bottom: 40%;
+                    right: 0;
+                    transform: translate(150%, 20%);
+                }
+            }
+        }
+        &._green{
+            &::before{
+                background-color: #4CBB17;
+            }
+        }
+    }
+
+    &__body{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        @include adaptiveValue("column-gap", 20, 10);
+        @include adaptiveValue("row-gap", 45, 0, 1920, 992, 1);  
+        @media(max-width:$tablet){
+           display: flex;
+           flex-direction: column;
+           justify-content: space-between;
+           flex: 1 1 auto;
+        }      
+        @media(max-width: 600px){
+            @include adaptiveValue("row-gap", 40, 30, 600, 320, 1);
+         }      
+ 
+
+    }
+
+    &__item {
+    }
+}
+.item-aticle {
+
+    &__title {
+        font-family: Montserrat;
+        @include adaptiveValue("font-size", 36, 15, 1920, 992, 1);
+        font-weight: 600;
+        line-height: 100%;
+        &:not(:last-child) {
+            @include adaptiveValue("margin-bottom", 15, 8, 1920, 992, 1);
+        }
+        @media(max-width:$tablet){
+            @include adaptiveValue("font-size", 30, 14, 991.98, 600, 1);
+        }
+        @media(max-width:600px){
+            @include adaptiveValue("font-size", 27, 20, 600, 320, 1);
+        }
+    }
+
+    &__text {
+        font-family: Inter;
+        @include adaptiveValue("font-size", 25, 12, 1920, 992, 1);
+        font-weight: 300;
+        line-height: normal;
+        @media(max-width:$tablet){
+            @include adaptiveValue("font-size", 20, 12, 991.98, 600, 1);
+        }
+        @media(max-width:600px){
+            @include adaptiveValue("font-size", 20, 14, 600, 320, 1);
+        }
+    }
+}
+

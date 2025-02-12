@@ -1,0 +1,271 @@
+
+.we {
+    @include adaptiveValue("padding-bottom", 80, 50);
+    &__container {
+    }
+    &__place{
+
+        @media(max-width:600px){
+            padding-bottom: orem(20);
+        }
+    }
+    &__title {
+        font-family: Montserrat;
+        @include adaptiveValue("font-size", 80, 40, 1920, 992, 1);
+        font-weight: 600;
+        line-height: normal;
+        @media(max-width: $tablet){
+            padding-bottom: orem(15);
+        }
+        
+        
+    }
+
+    &__body {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        gap: orem(20);
+        @media(max-width:600px){
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &__text {
+        @include adaptiveValue("font-size", 30, 20, 1920, 992, 1);
+        @media(max-width: $tablet){
+            @include adaptiveValue("font-size", 20, 16, 991.98, 450, 1);
+        }
+        
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    &__animation {
+
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    &__image-ibg{
+        animation: steps 2s linear 0s infinite normal forwards;
+        
+    }
+    &__image-1{
+        padding-bottom: percent(311, 319);
+    }
+    &__image-2{
+        padding-bottom: percent(311, 333);
+    }
+    &__image-3{
+        padding-bottom: percent(320, 306);
+    }
+
+}
+
+
+
+//============================================================================================
+
+
+
+.page {
+
+    &__position {
+    }
+}
+.position {
+    @include adaptiveValue("padding-bottom", 150, 50);
+    &__container {
+    }
+
+    &__body {
+        display: grid;
+        grid-template-columns: 5fr 7fr;
+        align-items: stretch;
+        @media(max-width:600px){
+            grid-template-columns: 1fr;
+            row-gap: orem(12);
+        }
+    }
+
+    &__left {
+    }
+
+    &__title {
+        font-family: Montserrat;
+        @include adaptiveValue("font-size", 40, 30, 1920, 992, 1);
+        font-weight: 600;
+        line-height: 1;
+        @media(max-width:$tablet){
+            @include adaptiveValue("font-size", 30, 25, 991.98, 600, 1);
+        }
+        @media(max-width:600px){
+            font-size: orem(30);
+        }
+        
+    }
+
+    &__right {
+    }
+
+    &__text {
+        @include adaptiveValue("font-size", 30, 16);
+        font-weight: 400;
+        line-height: normal;
+        @include adaptiveValue("font-size", 30, 20, 1920, 992, 1);
+        @media(max-width: $tablet){
+            @include adaptiveValue("font-size", 20, 16, 991.98, 450, 1);
+        }
+    }
+}
+
+//============================================================================================
+
+
+
+.page {
+
+    &__process {
+    }
+    &__end{
+        font-family: Montserrat;
+        @include adaptiveValue("font-size", 80, 40, 1920, 992, 1);
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        text-align: center;
+        @media(max-width:$tablet){
+            @include adaptiveValue("font-size", 40, 30, 991.98, 450, 1);
+        }
+        padding-bottom: orem(50);
+    }
+}
+.process {
+    
+    &__container {
+        display: grid;
+        grid-template-columns: 5fr 7fr;
+        align-items: stretch;
+        @media(max-width:600px){
+            grid-template-columns: 1fr;
+            row-gap: orem(30);
+        }
+        @include adaptiveValue("padding-bottom", 130, 50);
+    }
+
+    &__left {
+
+    }
+
+    &__title {
+        font-family: Montserrat;
+        @include adaptiveValue("font-size", 40, 30, 1920, 992, 1);
+        font-weight: 600;
+        line-height: 1;
+        @media(max-width:$tablet){
+            @include adaptiveValue("font-size", 30, 25, 991.98, 600, 1);
+        }
+        @media(max-width:600px){
+            font-size: orem(30);
+
+        }
+    }
+
+    &__right {
+    }
+
+    &__spollers {
+    }
+
+}
+.spollers {
+
+    &__item {
+        border-bottom: 1px solid #DCDCDC;
+    }
+
+    &__title {
+        position: relative;
+        display: grid;
+        grid-template-columns: 0.05fr 1fr;
+        gap: orem(8);
+        text-align: left;
+        width: 100%;
+        font-family: Montserrat;
+        @include adaptiveValue("font-size", 40, 28, 1920, 992, 1);
+        font-weight: 600;
+        line-height: normal;
+        padding: orem(20) orem(30);
+        
+        @media(max-width:$tablet){
+            @include adaptiveValue("font-size", 28, 20, 991.98, 600, 1);
+        }
+        @media(max-width:600px){
+            font-size: orem(20);
+        }
+        &._one{
+            &::before{
+                content: "1.";
+            }
+        }
+        &._two{
+            &::before{
+                content: "2.";
+            }
+        }
+        &._three{
+            &::before{
+                content: "3.";
+            }
+        }
+        &._four{
+            &::before{
+                content: "4.";
+            }
+        }
+        &._five{
+            &::before{
+                content: "5.";
+            }
+        }
+        .plus{
+            display: block;
+            @include adaptiveValue("width", 38, 20);
+            height: 2px;
+            background-color: #050505;
+            position: absolute;
+            top: 50%;
+            @include adaptiveValue("right", 50, 15);
+            transform: translate(0, -50%);
+            
+            &::before{
+                content: '';
+                display: block;
+                position: absolute;
+                top: 50%;
+                right: 50%;
+                width: 2px;
+                @include adaptiveValue("height", 38, 20);
+                background-color: #050505;
+                transform: translate(50%, -50%) rotate(0);
+                transition: all 0.3s ease 0s;
+            }
+
+        }
+        
+        &._spoller-active{
+            .plus{
+                &::before{
+                    transform: translate(50%, -50%) rotateX(90deg);
+                }
+            }
+        }
+    }
+
+    &__body {
+        padding: orem(25) orem(20) orem(10);
+        @include adaptiveValue("font-size", 20, 16);
+        font-weight: 400;
+        line-height: normal;
+    }
+}

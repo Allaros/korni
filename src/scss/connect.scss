@@ -1,0 +1,655 @@
+.page {
+
+    &__welcome {
+    }
+}
+.welcome {
+    @include adaptiveValue("padding-bottom", 70, 50);
+    &__container {
+    }
+
+    &__body {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        @include adaptiveValue("gap", 80, 20);
+        @media(max-width:$tablet){
+            grid-template-columns: 1fr 1fr;
+        }
+        @media(max-width: 600px){
+            grid-template-columns: 1fr;
+            row-gap: orem(15);
+        }
+    }
+
+    &__left {
+    }
+
+    &__title {
+        font-family: Montserrat;
+        @include adaptiveValue("font-size", 80, 40, 1920, 992, 1);
+        font-weight: 600;
+        line-height: 1;
+        @media(max-width:$tablet){
+            @include adaptiveValue("font-size", 40, 20, 991.98, 600, 1);
+        }
+        @media(max-width:600px){
+            @include adaptiveValue("font-size", 40, 30, 600, 320, 1);
+        }
+    }
+
+    &__right {
+        display: flex;
+        flex-direction: column;
+        @include adaptiveValue("gap", 20, 15, 1920, 992, 1);
+    }
+
+    &__text {
+        font-family: Inter;
+        @include adaptiveValue("font-size", 25, 14, 1920, 992, 1);
+        font-weight: 300;
+        line-height: normal;
+        @media(max-width:$tablet){
+            @include adaptiveValue("font-size", 14, 12, 991.98, 600, 1);
+        }
+        @media(max-width:600px){
+            font-size: orem(14);
+        }
+    }
+
+    &__contacts {
+        @include adaptiveValue("font-size", 20, 14);
+        font-weight: 400;
+        line-height: normal;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        @include adaptiveValue("column-gap", 50, 10, 1920, 992, 1);
+        row-gap: orem(10);
+        @media(max-width:$tablet){
+            @include adaptiveValue("font-size", 14, 12, 991.98, 600, 1);
+        }
+        @media(max-width:600px){
+            @include adaptiveValue("font-size", 14, 12, 600, 320, 1);
+        }
+    }
+
+    &__email {
+        white-space: nowrap;
+    }
+
+    &__phone {
+        white-space: nowrap;
+    }
+}
+.form {
+
+    &__services {
+    }
+
+    &__description {
+    }
+    
+    &__budget {
+    }
+    &__greetings {
+    }
+
+    &__promo {
+    }
+    &__submit {
+    }
+}
+.services-form {
+    @include adaptiveValue("padding-bottom", 60, 40);
+
+    &__body {
+        display: grid;
+        grid-template-columns: 5fr 7.5fr;
+        column-gap: orem(20);
+        row-gap: orem(30);
+        @media(max-width:$tablet){
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &__left {
+    }
+
+    &__title {
+        font-family: Montserrat;
+        @include adaptiveValue("font-size", 35, 20, 1920, 992, 1);
+        font-weight: 600;
+        line-height: 1;
+        &:not(:last-child) {
+            margin-bottom: orem(20);
+        }
+        @media(max-width:$tablet){
+            &:not(:last-child) {
+                margin-bottom: orem(5);    
+            }
+            @include adaptiveValue("font-size", 36, 30, 991.98, 320, 1);
+            
+        }
+    }
+
+    &__text {
+        @include adaptiveValue("font-size", 25, 14, 1920, 992, 1);
+        font-weight: 300;
+        line-height: normal;
+        @media(max-width:$tablet){
+            @include adaptiveValue("font-size", 20, 16, 991.98, 320, 1);
+            
+        }
+    }
+
+    &__right {
+
+    }
+
+    &__checkbox {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        @include adaptiveValue("gap", 15, 10, 1920, 992, 1);
+        @media(max-width:$tablet){
+            @include adaptiveValue("gap", 80, 10, 991.98, 600, 1);
+        }
+        @media(max-width:600px){
+            grid-template-columns: 1fr 1fr;
+            @include adaptiveValue("column-gap", 50, 20, 599.98, 320, 1);
+            @include adaptiveValue("row-gap", 40, 30, 599.98, 320, 1);
+        }
+    }
+
+    &__column{
+        display: flex;
+        flex-direction: column;
+    }
+    &__name{
+        position: relative;
+        @include adaptiveValue("font-size", 30, 14, 1920, 992, 1);
+        font-weight: 500;
+        line-height: normal;
+        white-space: nowrap;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: orem(8);
+        &:not(:last-child) {
+            margin-bottom: orem(16);
+        }
+        &::after{
+            content: '';
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+        }
+        &._orange{
+            &::after{
+                background-color: #FF891C;
+            }
+        }
+        &._blue{
+            &::after{
+                background-color: #1E90FF;
+            }
+            
+        }
+        &._red{
+            &::after{
+                background-color: #FF1C60;
+            }
+            
+        }
+        &._green{
+            &::after{
+                background-color: #4CBB17;
+            }
+            
+        }
+        @media(max-width:$tablet){
+            @include adaptiveValue("font-size", 20, 14, 991.98, 600, 1);
+            &:not(:last-child) {
+                margin-bottom: orem(20);
+            }
+        }
+        @media(max-width:600px){
+            @include adaptiveValue("font-size", 20, 14, 600, 320, 1);
+        }
+    }
+
+    &__input-checkbox {
+        display: none;
+        &:focus + .services-form__field {
+			
+		}
+        &:checked + .services-form__field{
+            &._orange{
+                color:#FF891C;
+            }
+            &._blue{
+                color:#1E90FF;
+                
+            }
+            &._red{
+                color:#FF1C60;
+                
+            }
+            &._green{
+                color:#4CBB17;
+                
+            }
+		}
+    }
+
+    &__field{
+        @include adaptiveValue("font-size", 20, 12, 1920, 992, 1);
+        font-weight: 400;
+        line-height: normal;
+        &:not(:last-child) {
+            margin-bottom: orem(20);
+        }
+        cursor: pointer;
+        transition: color 0.3s ease 0s;
+        @media(max-width:$tablet){
+            @include adaptiveValue("font-size", 16, 12, 991.98, 600, 1);
+        }
+        @media(max-width:600px){
+            @include adaptiveValue("font-size", 16, 12, 600, 320, 1);
+        }
+    }
+
+
+
+
+
+
+}
+
+
+
+.description-form {
+    @include adaptiveValue("padding-bottom", 60, 50);
+    &__body {
+        display: grid;
+        grid-template-columns: 5fr 7.5fr;
+        column-gap: orem(20);
+        row-gap: orem(30);
+        @media(max-width:$tablet){
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &__left {
+    }
+
+    &__title {
+        font-family: Montserrat;
+        @include adaptiveValue("font-size", 36, 20, 1920, 992, 1);
+        font-weight: 600;
+        line-height: 100%;
+        &:not(:last-child) {
+            margin-bottom: orem(20);
+        }
+        @media(max-width:$tablet){
+            @include adaptiveValue("font-size", 38, 26, 991.98, 320, 1);
+            &:not(:last-child) {
+                margin-bottom: orem(5);
+            }
+        }
+        
+    }
+
+    &__text {
+        @include adaptiveValue("font-size", 25, 16, 1920, 992, 1);
+        font-weight: 300;
+        line-height: normal;
+        @media(max-width:$tablet){
+            @include adaptiveValue("font-size", 20, 14, 991.98, 320, 1);
+        }
+    }
+
+    &__right {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    &__input {
+        height: orem(250);
+        width: 100%;
+        padding: orem(18);
+        border: 1px solid #000;
+        border-radius: 5px;
+        &:not(:last-child) {
+            margin-bottom: orem(5);
+        }
+        @include adaptiveValue("font-size", 25, 16, 1920, 992, 1);
+        @media(max-width:$tablet){
+            @include adaptiveValue("font-size", 20, 14, 991.98, 320, 1);
+        }
+        @media(max-width:600px){
+            height: 480px;
+        }
+    }
+
+    &__upload {
+    }
+
+    &__file {
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;
+    }
+    &__label{
+        position: relative;
+        @include adaptiveValue("font-size", 25, 15);
+        font-weight: 300;
+        line-height: normal;
+        display: inline-flex;
+        align-items: center;
+        cursor: pointer;
+        gap: orem(8);
+        &::after{
+            content: url('@img/icons/plus-2.svg');
+            display: block;
+
+        }
+        @media(max-width:$tablet){
+            &::after{
+                content: url('@img/icons/plus-3.svg');
+            }
+        }
+    }
+}
+
+
+
+.budget-form {
+    @include adaptiveValue("padding-bottom", 100, 50);
+
+    &__body {
+        display: grid;
+        grid-template-columns: 5fr 7.5fr;
+        column-gap: orem(20);
+        row-gap: orem(30);
+        @media(max-width:$tablet){
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &__left {
+    }
+
+    &__title {
+        font-family: Montserrat;
+        @include adaptiveValue("font-size", 36, 20, 1920, 992, 1);
+        font-weight: 600;
+        line-height: 100%;
+        &:not(:last-child) {
+            margin-bottom: orem(20);
+        }
+        @media(max-width:$tablet){
+            @include adaptiveValue("font-size", 38, 28, 991.98, 320, 1);
+        }
+        &:not(:last-child) {
+            margin-bottom: orem(5);
+        }
+    }
+
+    &__text {
+        @include adaptiveValue("font-size", 25, 14, 1920, 992, 1);
+        font-weight: 300;
+        line-height: normal;
+        @media(max-width:$tablet){
+            @include adaptiveValue("font-size", 20, 14, 991.98, 320, 1);
+        }
+    }
+
+    &__right {
+    }
+
+    &__options {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @include adaptiveValue("gap", 20, 5, 1920, 992, 1);
+        @media(max-width:$tablet){
+            @include adaptiveValue("gap", 50, 0, 991.98, 600, 1);
+        }
+        @media(max-width:600px){
+            flex-wrap: wrap;
+            column-gap: orem(30);
+            row-gap: orem(25);
+            justify-content: start;
+        }
+    }
+
+    &__item {
+    }
+
+    &__input {
+        &:checked + .budget-form__field{
+            background-color: #000;
+            color: #fff;
+        }
+    }
+
+    &__field {
+        padding: orem(8);
+        display: inline-block;
+        cursor: pointer;
+        @include adaptiveValue("font-size", 30, 14, 1920, 992, 1);
+        font-weight: 500;
+        line-height: normal;
+        border: 1px solid #000;
+        border-radius: orem(3);
+        white-space: nowrap;
+        transition: all 0.3s ease 0s;
+        @media(max-width:$tablet){
+            @include adaptiveValue("font-size", 20, 14, 991.98, 600, 1);
+        }
+        @media(max-width:600px){
+            @include adaptiveValue("font-size", 20, 18, 600, 320, 1);
+            padding: orem(5);
+        }
+
+    }
+
+    &__label {
+        display: inline-flex;
+        align-items: center;
+        gap: orem(8);
+        &._low{
+            &::before{
+                content: '<';
+                display: inline-block;
+            }
+        }
+    }
+}
+
+
+.greetings-form {
+    @include adaptiveValue("padding-bottom", 100, 50);
+    &__body {
+        display: grid;
+        grid-template-columns: 5fr 7.5fr;
+        column-gap: orem(20);
+        row-gap: orem(30);
+        @media(max-width:$tablet){
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &__left {
+    }
+
+    &__title {
+        font-family: Montserrat;
+        @include adaptiveValue("font-size", 36, 20, 1920, 992, 1);
+        font-weight: 600;
+        line-height: 100%;
+        &:not(:last-child) {
+            margin-bottom: orem(20);
+        }
+        @media(max-width:$tablet){
+            @include adaptiveValue("font-size", 38, 28, 991.98, 320, 1);
+            &:not(:last-child) {
+                margin-bottom: orem(5);
+            }
+        }
+        
+    }
+
+    &__text {
+        @include adaptiveValue("font-size", 25, 12, 1920, 992, 1);
+        font-weight: 300;
+        line-height: normal;
+        @media(max-width:$tablet){
+            @include adaptiveValue("font-size", 20, 14, 991.98, 320, 1);
+        }
+    }
+
+    &__right {
+        display: flex;
+        flex-direction: column;
+        @include adaptiveValue("gap", 30, 10);
+        @media(max-width:600px){
+            gap: orem(30);
+        }
+    }
+
+    &__field {
+        display: flex;
+        align-items: center;
+        @include adaptiveValue("gap", 20, 5);
+    }
+
+    &__label {
+        @include adaptiveValue("font-size", 30, 16, 1920, 992, 1);
+        font-weight: 500;
+        line-height: normal;
+        white-space: nowrap;
+        @media(max-width:$tablet){
+            @include adaptiveValue("font-size", 20, 16, 991.98, 320, 1);
+        }
+    }
+
+    &__input {
+        border-bottom: 1px solid #000;
+        width: 100%;
+        @include adaptiveValue("font-size", 30, 16, 1920, 992, 1);
+        font-weight: 400;
+        line-height: normal;
+        @media(max-width:$tablet){
+            @include adaptiveValue("font-size", 20, 14, 991.98, 320, 1);
+        }
+        outline: none;
+    }
+
+    &__contacts {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @include adaptiveValue("gap", 20, 10);
+        @media(max-width:600px){
+            flex-direction: column;
+            align-items: flex-start;
+            gap: orem(30);
+        }
+
+    }
+
+    &__phone {
+        display: flex;
+        align-items: center;
+        @include adaptiveValue("gap", 20, 5);
+        width: 100%;
+    }
+
+    &__telegram {
+        display: flex;
+        align-items: center;
+        @include adaptiveValue("gap", 20, 5);
+        width: 100%;
+    }
+}
+
+
+
+.promo-form {
+    background-color: #050505;
+    &__container{
+        @include adaptiveValue("padding-top", 35, 25);
+        @include adaptiveValue("padding-bottom", 35, 25);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: orem(23);
+        @media(max-width:600px){
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+    &__label {
+        font-family: Montserrat;
+        @include adaptiveValue("font-size", 36, 25, 1920, 992, 1);
+        font-weight: 600;
+        line-height: 100%;
+        color: #fff;
+        white-space: nowrap;
+    }
+
+    &__input {
+        max-width: orem(600);
+        width: 100%;
+        @include adaptiveValue("font-size", 50, 40, 1920, 992, 1);
+        font-weight: 500;
+        line-height: 100%;
+        color: #fff;
+        background-color: #050505;
+        border-bottom: 2px solid #fff;
+        outline: none;
+        text-align: center;
+    }
+}
+
+
+.submit-form {
+    @include adaptiveValue("padding-bottom", 75, 50);
+    @include adaptiveValue("padding-top", 75, 50);
+    &__button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__label {
+        display: inline-block;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        border-radius: 60px;
+        border: 2px solid #000;
+        padding: orem(20) orem(30);
+        cursor: pointer;
+        transition: border-color 0.3s ease 0s;
+        &:hover{
+            border-color: #75D55F;
+        }
+        &:target{
+            background-color: #75D55F;
+            color: #fff;
+        }
+    }
+
+    &__sub {
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;
+    }
+}
+
+
+

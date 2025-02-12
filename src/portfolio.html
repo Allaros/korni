@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('html/_head.htm',{
+	"title":"Портфолио"
+	})
+	<body style="opacity: 0">
+		<div class="wrapper">
+			<header class="header usual">
+				<div class="header__container">
+					<nav class="header__body">
+						<div class="header__volume">
+							<button><img src="@img/icons/sound_on.svg" alt="Звук" class="header__sound"></button>
+							/
+							<button><img src="@img/icons/sound_off.svg" alt="Звук" class="header__sound"></button>
+						</div>
+						<a data-da=".menu__links, 600" href="portfolio.html" class="header__item _targeted">Портфолио</a>
+						<a data-da=".menu__links, 600" href="directions.html" class="header__item">Услуги</a>
+						<div class="header__korni"><a href="index.html"><img src="@img/icons/logo3.svg" alt="Korni"></a></div>
+						<a data-da=".menu__links, 600" href="about-us.html" class="header__item">Агентство</a>
+						<a data-da=".menu__links, 600" href="connect.html" class="header__item">Связаться</a>
+						<div class="header__language">
+							<button class="header__rus active">Рус</button>
+							/
+							<button class="header__eng">Eng</button>
+						</div>
+					</nav>
+				</div>
+			</header>
+			<main class="page _usual">
+				<div class="veil"></div>
+				<div class="header__menu menu">
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
+					<nav class="menu__body">
+						<div class="menu__links active">
+							<a href="index.html" class="header__item _link">Главная</a>
+						</div>
+					</nav>
+				</div>
+				<section class="page__portfolio portfolio">
+					<div class="portfolio__container">
+						<div class="portfolio__top">
+							<h3 class="portfolio__title">Портфолио</h3>
+							<div class="portfolio__menu portfolio__menu_desktop">
+								<div class="portfolio__theme "><span class="_orange">Граф. дизайн</span></div>
+								<div class="portfolio__theme "><span class="_blue">UX/UI дизайн</span></div>
+								<div class="portfolio__theme "><span class="_red">Моб. Приложения</span></div>
+								<div class="portfolio__theme "><span class="_green">Маркетинг</span></div>
+								<div class="portfolio__theme "><span class="_purple">Комплексы</span></div>
+							</div>
+							<div class="portfolio__menu portfolio__menu_mobile">
+								<div class="portfolio__theme "><span class="_orange">Граф. дизайн</span></div>
+								<div class="portfolio__theme "><span class="_red">Моб. Приложения</span></div>
+								<div class="portfolio__theme "><span class="_blue">UX/UI дизайн</span></div>
+								<div class="portfolio__theme "><span class="_green">Маркетинг</span></div>
+								<div class="portfolio__theme "><span class="_purple">Комплексы</span></div>
+							</div>
+						</div>
+
+						<div class="portfolio__projects">
+							<div class="portfolio__item item-portfolio">
+								<div class="item-portfolio__image-ibg _blue">
+									<img src="@img/main/articles/image-3.jpg" alt="staya">
+								</div>
+								<h2 class="item-portfolio__title">staya</h2>
+								<div class="item-portfolio__descript">Рекламный лендинг умного трекера для животных</div>
+							</div>
+							<div class="portfolio__item item-portfolio">
+								<div class="item-portfolio__image-ibg _blue">
+									<img src="@img/portfolio/sber.png" alt="Сбер Здоровье">
+								</div>
+								<h2 class="item-portfolio__title">СБЕР ЗДОРОВЬЕ</h2>
+								<div class="item-portfolio__descript">Сервис для HR и сотрудников в сфере e-commerce медицины</div>
+							</div>
+							<div class="portfolio__item item-portfolio">
+								<div class="item-portfolio__image-ibg _orange">
+									<img src="@img/portfolio/beams.jpg" alt="beams">
+								</div>
+								<h2 class="item-portfolio__title">beams</h2>
+								<div class="item-portfolio__descript">Айдентика для благотворительного бренда одежды</div>
+							</div>
+							<div class="portfolio__item item-portfolio _compared _compared__1 _bd">
+								<div class="item-portfolio__image-ibg _purple">
+									<img class="item-portfolio__img-desktop" src="@img/portfolio/med.gif" alt="ешьте мёд">
+									<img class="item-portfolio__img-mobile" src="@img/portfolio/med-mobile.gif" alt="ешьте мёд">
+								</div>
+								<h2 class="item-portfolio__title">ешьте мёд</h2>
+								<div class="item-portfolio__descript">Нейминг, фирменный стиль и лендинг для семейной пасеки из Донецка.</div>
+							</div>
+							<div class="portfolio__item item-portfolio">
+								<div class="item-portfolio__image-ibg _blue">
+									<img src="@img/portfolio/Microsoft.jpg" alt="Microsoft forum">
+								</div>
+								<h2 class="item-portfolio__title">Microsoft forum</h2>
+								<div class="item-portfolio__descript">Лендинг и key visual для форума в сфере IT-индустрии</div>
+							</div>
+							<div class="portfolio__item item-portfolio">
+								<div class="item-portfolio__image-ibg _blue">
+									<img src="@img/portfolio/appi.jpg" alt="appi team">
+								</div>
+								<h2 class="item-portfolio__title">Appi Team</h2>
+								<div class="item-portfolio__descript">Лендинг для команды аэрографистов ручной работы</div>
+							</div>
+							<div class="portfolio__item item-portfolio">
+								<div class="item-portfolio__image-ibg _red">
+									<img src="@img/portfolio/irt.jpg" alt="IRT News">
+								</div>
+								<h2 class="item-portfolio__title">IRT News</h2>
+								<div class="item-portfolio__descript">Мобильное приложение для новостного портала</div>
+							</div>
+							<div class="portfolio__item item-portfolio">
+								<div class="item-portfolio__image-ibg _orange">
+									<img src="@img/portfolio/VENUSTUS.jpg" alt="VENUSTUS">
+								</div>
+								<h2 class="item-portfolio__title">VENUSTUS</h2>
+								<div class="item-portfolio__descript">Фирменный стиль для бренда женской одежды</div>
+							</div>
+							<div class="portfolio__item item-portfolio">
+								<div class="item-portfolio__image-ibg _orange">
+									<img src="@img/portfolio/school.jpg" alt="Детская школа искусств">
+								</div>
+								<h2 class="item-portfolio__title">Детская школа искусств имени А. А. Алябьева</h2>
+								<div class="item-portfolio__descript">Редизайн логотипа для ДШИ</div>
+							</div>
+							<div class="portfolio__item item-portfolio _compared _compared__2 _bd">
+								<div class="item-portfolio__image-ibg _purple">
+									<img class="item-portfolio__img-desktop" src="@img/portfolio/manna.gif" alt="manna">
+									<img class="item-portfolio__img-mobile" src="@img/portfolio/manna-mobile.gif" alt="manna">
+								</div>
+								<h2 class="item-portfolio__title">Манна</h2>
+								<div class="item-portfolio__descript">Приложение доставки продуктов в условии локальных трудностей</div>
+							</div>
+							<div class="portfolio__item item-portfolio _compared _compared__3">
+								<div class="item-portfolio__image-ibg _purple">
+									<img class="item-portfolio__img-desktop" src="@img/portfolio/moau-sosh.jpg" alt="МОАУ СОШ №46">
+									<img class="item-portfolio__img-mobile" src="@img/portfolio/moau-sosh-mobile.jpg" alt="МОАУ СОШ №46">
+								</div>
+								<h2 class="item-portfolio__title">МОАУ СОШ №46</h2>
+								<div class="item-portfolio__descript">Редизайн сайта и логотипа для общеобразовательной школы Екатеринбурга</div>
+							</div>
+							<div class="portfolio__item item-portfolio">
+								<div class="item-portfolio__image-ibg _orange">
+									<img src="@img/portfolio/electi.jpg" alt="electi jewelry">
+								</div>
+								<h2 class="item-portfolio__title">electi jewelry</h2>
+								<div class="item-portfolio__descript">Фирменный стиль для ювелирного магазина</div>
+							</div>
+							<div class="portfolio__item item-portfolio">
+								<div class="item-portfolio__image-ibg _orange">
+									<img src="@img/portfolio/wow-coffe.jpg" alt="WOW COFFEE">
+								</div>
+								<h2 class="item-portfolio__title">WOW COFFEE</h2>
+								<div class="item-portfolio__descript">Фирменный стиль для современного кафе</div>
+							</div>
+							<div class="portfolio__item item-portfolio">
+								<div class="item-portfolio__image-ibg _orange">
+									<img src="@img/portfolio/sreda.jpg" alt="Среда развития">
+								</div>
+								<h2 class="item-portfolio__title">Среда развития</h2>
+								<div class="item-portfolio__descript">Плакат в честь дня космонавтики</div>
+							</div>
+							<div class="portfolio__item item-portfolio item-hide">
+								<div class="item-portfolio__image-ibg _orange">
+									<img src="@img/portfolio/zvuk.jpg" alt="Звук">
+								</div>
+								<h2 class="item-portfolio__title">Звук</h2>
+								<div class="item-portfolio__descript">Фирменный стиль для музыкального магазина</div>
+							</div>
+							<div class="portfolio__item item-portfolio">
+								<div class="item-portfolio__image-ibg _red">
+									<img src="@img/portfolio/LA-kendo.jpg" alt="LA Kendo">
+								</div>
+								<h2 class="item-portfolio__title">LA Kendo</h2>
+								<div class="item-portfolio__descript">Мобильное приложение для заказа пиццы из ресторана</div>
+							</div>
+							<div class="portfolio__item item-portfolio  _compared _compared__4">
+								<div class="item-portfolio__image-ibg _purple">
+									<img src="@img/portfolio/cortex.gif" alt="CORTEX GALAXY">
+								</div>
+								<h2 class="item-portfolio__title">CORTEX GALAXY</h2>
+								<div class="item-portfolio__descript">Редизайн сайта и логотипа для видео-агентства из Мюнхена</div>
+							</div>
+						</div>
+						<div class="portfolio__button">
+							<a href="#" >Увидеть всё</a>
+						</div>
+					</div>
+				</section>
+				<div class="page__discuss discuss hide">
+					<div class="discuss__button">
+						<a href="connect.html">Обсудить проект</a>
+					</div>
+				</div>
+			</main>
+			@@include('html/_footer.htm',{})
+		</div>
+		@@include('html/_popup.htm',{})
+		@@include('html/_js.htm',{})
+	</body>
+</html>
